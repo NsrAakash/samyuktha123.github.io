@@ -1,63 +1,124 @@
-My works
+Embedded & Automotive Software Projects Portfolio
 
-Honeywell Notifier Fire Panel – Embedded Firmware & Hardware Integration
-This project is based on FreeRTOS and is used to communicate between sensors and a panel.
+This repository showcases my embedded systems and automotive software engineering experience through project summaries, workflows, and demo-level concepts.
+⚠️ No proprietary or company-confidential source code is included.
 
-The system works using a Notifier concept, where different threads handle different tasks.
+👩‍💻 About Me
 
-One thread reads data from sensors, and another thread updates the display panel.
+I am an Embedded / Automotive Software Engineer with experience in:
 
-The code is first tested using an SD card (mock mode), then compiled and loaded into Embedded Linux.
+Embedded firmware development
 
-Code compilation is done IRS CONFIGURATION TOOL. After testing, the firmware is loaded into the panel through the SD card.
+FreeRTOS-based systems
 
-Communication between the panel and devices happens using a custom communication protocol.
+Automotive ASPICE processes (SWE 1–4)
 
-Each device has a unique ID, and the system can handle multiple devices.
+Static code analysis and safety standards
 
-The panel supports auto-learning, which automatically detects connected devices.
+🔥 Project 1: Honeywell Notifier Fire Panel
 
-The panel is used for configuration, testing, and monitoring of devices.
+Embedded Firmware & Hardware Integration
 
-Two panels can communicate with each other using RS232, where one acts as master and the other as slave.
+Project Overview
 
-To avoid system crashes, acknowledgment is added so the panel knows whether a device has responded.
+This project is based on FreeRTOS and focuses on reliable communication between fire sensors and a notifier panel.
 
-A caching mechanism is used to improve performance and avoid repeated database searches.
+Key Concepts
 
-The system supports alarms, indicators, and control buttons like reset and silence alarm.
+Multi-threaded design using FreeRTOS
 
-Overall, this project creates a stable, reliable, and efficient embedded communication system.
+Sensor data acquisition and panel display handling
 
-Above are all wired connection. Wireless gateway can be created by creating mesh for communication.
+Custom communication protocol between devices and panel
 
+Wired communication with support for future wireless mesh expansion
 
+My Contributions
 
+Implemented separate threads for sensor handling and panel updates
 
+Tested firmware using SD card mock mode
 
-I worked for Audippe – Volvo project at BorgWarner ODC.
+Compiled and configured firmware using IRS Configuration Tool
 
-My work mainly followed the ASPICE software engineering process, specifically SWE 1 to SWE 4.
+Loaded firmware into Embedded Linux and panel hardware
 
-I was involved in Requirement Analysis, where system and software requirements were studied and documented.
+Implemented:
 
-I worked on Traceability, linking requirements to design and implementation to ensure proper coverage.
+Device auto-learning
 
-I supported Enterprise Architecture activities to understand system-level software structure.
+Acknowledgment mechanism to avoid crashes
 
-I worked on Software Detailed Design, creating clear and structured designs.
+Caching to improve performance
 
-All these activities were performed using the Polarion tool.
+Enabled RS232 panel-to-panel communication (Master–Slave)
 
-I also worked on Static Code Analysis using Polyspace.
+Supported alarms, indicators, reset, and silence alarm controls
 
-Followed MISRA-C guidelines to ensure safe and reliable embedded C code.
+Technologies & Tools
 
-I had exposure to VectorCAST for unit testing concepts.
+FreeRTOS
 
-For a short period, I supported the SWE-5 team in HIL integration using Vector CANoe test bench, gaining basic hands-on understanding.
+Embedded C
 
-I also attended training sessions on basic AUTOSAR concepts.
+Embedded Linux
 
-Overall, this project helped me gain strong experience in automotive software processes, safety standards, and industry tools.
+RS232
 
+SD Card Booting
+
+IRS Configuration Tool
+
+📝 Note: All connections in this project are wired. A wireless gateway can be added by implementing mesh-based communication.
+
+🚗 Project 2: Audippe – Volvo Project (BorgWarner ODC)
+
+Automotive Software Engineering (ASPICE)
+
+Project Overview
+
+Worked on automotive software development following ASPICE SWE 1 to SWE 4 processes.
+
+My Responsibilities
+
+Requirement Analysis (SWE-1)
+
+Requirement Traceability (SWE-2)
+
+Enterprise Architecture support (SWE-3)
+
+Software Detailed Design (SWE-4)
+
+Tools & Standards
+
+Polarion – for requirements, traceability, and design
+
+Polyspace – static code analysis
+
+MISRA-C – coding guidelines
+
+Exposure to VectorCAST – unit testing concepts
+
+Supported SWE-5 team briefly for:
+
+HIL integration
+
+Vector CANoe test bench
+
+Attended training on basic AUTOSAR concepts
+
+Key Learning
+
+Automotive development lifecycle
+
+Safety-focused software practices
+
+Industry-standard tools and workflows
+
+📌 Important Note for Recruiters
+
+This repository contains sample explanations and demo-level concepts only
+
+No proprietary code from Honeywell, BorgWarner, Volvo, or Audippe is shared
+
+Content is intended to demonstrate skills, understanding, and experience
