@@ -1,19 +1,63 @@
 My works
+
 Honeywell Notifier Fire Panel – Embedded Firmware & Hardware Integration
-Embedded Engineer | RTOS, C++
-•	Developed and debugged RTOS-based C++ firmware for a safety-critical fire alarm control panel.
-•	Implemented and resolved event-driven system behaviors, including communication failures, duplicate address detection, and alarm silence handling.
-•	Performed firmware build, configuration, and deployment using IRS configuration tools; generated firmware images and deployed via SD card.
-•	Conducted hardware bring-up and validation by integrating firmware with addressable sensors, strobes, and sounder-strobes connected to the panel.
-•	Supported wired and wireless mesh configurations via gateway integration; validated device addressing and communication reliability.
-•	Implemented new platform features including code signing and remote indicator functionality.
-•	Debugged system-level issues using waveform analysis and hardware testing to ensure real-world reliability and safety compliance.
-Audi PPE Platform (BorgWarner) – Automotive Embedded Software (ASPICE)
-Embedded Engineer | ASPICE, AUTOSAR (Exposure)
-•	Worked across ASPICE SWE.1–SWE.4, including software requirements analysis, architecture design, detailed design, implementation, and verification.
-•	Managed requirements, design artifacts, traceability, and defect tracking using Polarion.
-•	Contributed to enterprise-level software architecture aligned with automotive safety and quality standards.
- 
-•	Performed static code analysis and supported quality compliance activities in a production automotive environment.
-•	Gained exposure to AUTOSAR Basic Software concepts and automotive embedded system workflows.
-•	Collaborated with cross-functional teams to support production-ready, reliability-focused software delivery.
+This project is based on FreeRTOS and is used to communicate between sensors and a panel.
+
+The system works using a Notifier concept, where different threads handle different tasks.
+
+One thread reads data from sensors, and another thread updates the display panel.
+
+The code is first tested using an SD card (mock mode), then compiled and loaded into Embedded Linux.
+
+Code compilation is done IRS CONFIGURATION TOOL. After testing, the firmware is loaded into the panel through the SD card.
+
+Communication between the panel and devices happens using a custom communication protocol.
+
+Each device has a unique ID, and the system can handle multiple devices.
+
+The panel supports auto-learning, which automatically detects connected devices.
+
+The panel is used for configuration, testing, and monitoring of devices.
+
+Two panels can communicate with each other using RS232, where one acts as master and the other as slave.
+
+To avoid system crashes, acknowledgment is added so the panel knows whether a device has responded.
+
+A caching mechanism is used to improve performance and avoid repeated database searches.
+
+The system supports alarms, indicators, and control buttons like reset and silence alarm.
+
+Overall, this project creates a stable, reliable, and efficient embedded communication system.
+
+Above are all wired connection. Wireless gateway can be created by creating mesh for communication.
+
+
+
+
+
+I worked for Audippe – Volvo project at BorgWarner ODC.
+
+My work mainly followed the ASPICE software engineering process, specifically SWE 1 to SWE 4.
+
+I was involved in Requirement Analysis, where system and software requirements were studied and documented.
+
+I worked on Traceability, linking requirements to design and implementation to ensure proper coverage.
+
+I supported Enterprise Architecture activities to understand system-level software structure.
+
+I worked on Software Detailed Design, creating clear and structured designs.
+
+All these activities were performed using the Polarion tool.
+
+I also worked on Static Code Analysis using Polyspace.
+
+Followed MISRA-C guidelines to ensure safe and reliable embedded C code.
+
+I had exposure to VectorCAST for unit testing concepts.
+
+For a short period, I supported the SWE-5 team in HIL integration using Vector CANoe test bench, gaining basic hands-on understanding.
+
+I also attended training sessions on basic AUTOSAR concepts.
+
+Overall, this project helped me gain strong experience in automotive software processes, safety standards, and industry tools.
+
